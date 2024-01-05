@@ -2,24 +2,8 @@
 
 using namespace std;
 
-bool isPrime(unsigned n)
-{
-  if (n < 2)
-    return false;
-
-  for (int i = 2; i < n; i++)
-  {
-    if (n % i == 0)
-      return false;
-  }
-
-  return true;
-}
-
 bool amIWilson(unsigned n)
 {
-  if (!isPrime(n))
-    return false;
 
   unsigned rst = 1;
   for (unsigned i = 2; i < n; i++)
