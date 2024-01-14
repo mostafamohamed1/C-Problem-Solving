@@ -1,21 +1,29 @@
 #include <iostream>
-#include <algorithm>
+// #include <algorithm>
 #include <sstream>
 
 bool is_digit(std::string s)
 {
-
-  if (s.size() == 0)
-    return false;
-
-  size_t indexDot = s.find('.');
-  if (indexDot < s.size())
-    s.erase(indexDot, 1);
-  if (s.at(0) == '-')
-    s.erase(0, 1);
-
-  return std::all_of(s.begin(), s.end(), ::isdigit);
+  std::stringstream ss(s);
+  double d;
+  ss >> d;
+  return ss && ss.eof();
 }
+
+// bool is_digit(std::string s)
+// {
+
+//   if (s.size() == 0)
+//     return false;
+
+//   size_t indexDot = s.find('.');
+//   if (indexDot < s.size())
+//     s.erase(indexDot, 1);
+//   if (s.at(0) == '-')
+//     s.erase(0, 1);
+
+//   return std::all_of(s.begin(), s.end(), ::isdigit);
+// }
 
 int main()
 {
