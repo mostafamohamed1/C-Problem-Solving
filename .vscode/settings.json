@@ -60,6 +60,7 @@
     "regex": "cpp",
     "algorithm": "cpp",
     "array": "cpp",
-    "optional": "cpp"
+    "optional": "cpp",
+    "sstream": "cpp"
   }
 }
