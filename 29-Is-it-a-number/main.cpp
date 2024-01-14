@@ -1,6 +1,7 @@
 #include <iostream>
 // #include <algorithm>
 #include <sstream>
+#include <cmath>
 
 bool is_digit(std::string s)
 {
@@ -32,5 +33,8 @@ int main()
   std::cout << is_digit("s2324") << std::endl;
   std::cout << is_digit("3 4") << std::endl;
   std::cout << is_digit("-234.4") << std::endl;
+
+  std::cout << "=====================" << std::endl;
+  std::cout << sqrt(9) << std::endl;
   return 0;
 }
