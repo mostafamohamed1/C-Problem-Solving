@@ -7,7 +7,6 @@ double round_d(double var, int precision = 2)
   if (precision < 0)
     precision = 0;
   double value = (var >= 0) ? (int)(var * std::pow(10, precision) + .5) : (int)(var * std::pow(10, precision) - .5);
-  std::cout << value << std::endl;
   return value / std::pow(10, precision);
 }
 
