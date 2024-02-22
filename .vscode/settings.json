@@ -62,6 +62,7 @@
     "array": "cpp",
     "optional": "cpp",
     "sstream": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "fstream": "cpp"
   }
 }
